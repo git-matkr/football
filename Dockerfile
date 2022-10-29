@@ -1,4 +1,8 @@
-# 2. Fix Docker file
+
+# 2. Fix Docker file und Feature docker file
+
+# gefixte Fehler in dem Dockerfile
+
 ARG DOCKER_BASE
 FROM $DOCKER_BASE
 
@@ -15,4 +19,4 @@ RUN python3 -m pip install psutil
 COPY . /gfootball
 RUN cd /gfootball && python3 -m pip install .
 WORKDIR '/gfootball'
-# gefixte Fehler in dem Dockerfile
+
